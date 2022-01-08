@@ -102,7 +102,7 @@ else:
         cv2.imshow("debug", image)
         key = cv2.waitKey(1000)
         if key==27:
-        break
+            break
         elif key==ord("c"):
             file_name = row[0].split("/")[-1]
             cv2.imwrite("debug/"+file_name, image)
